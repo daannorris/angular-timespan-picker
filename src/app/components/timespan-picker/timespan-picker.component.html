@@ -1,0 +1,24 @@
+<div class="row">
+  <div class="col-sm-6">
+    <div class="row">
+      <div class="col-sm-6">
+        <input [attr.id]="id + '_hours'" type="number" class="form-control text-end" placeholder="Hours"
+          [formControl]="hoursControl">
+      </div>
+      <div class="col-sm-6">
+        <label [attr.for]="id + '_hours'" class="col-form-label ">Hours</label>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="row">
+      <div class="col">
+        <input [attr.id]="id + '_minutes'" type="number" class="form-control text-end" placeholder="Minutes"
+          [formControl]="minutesControl">
+      </div>
+      <div class="col">
+        <label [attr.for]="id + '_minutes'" class="col-form-label">Minutes</label>
+      </div>
+    </div>
+  </div>
+</div>
